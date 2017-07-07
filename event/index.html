@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            'url': 'http://192.168.18.29:8080',
+            'method': 'POST',
+            'data': {},
+            'success': function(data) {
+                // console.log('成功');
+                console.log(data)
+            }
+        });
+        console.log('发送请求')
+    </script>
+</body>
+
+</html>
